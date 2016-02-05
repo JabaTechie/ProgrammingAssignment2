@@ -1,0 +1,22 @@
+makeCacheMatrix <- function(x = invrs()) {}
+makeCacheMatrix <- function(x = matrix()) {#
+	invrs <- NULL#
+	set <- function(y){#
+		x <<- y#
+		invrs <<- NULL#
+	}#
+	get <- function() x#
+	setInverse <- function(inverse) invrs <<- inverse#
+	getInverse <- function() inv#
+	list(set = set,#
+		get = get,#
+		setInverse = setInverse,#
+		getInverse = getInverse)#
+}
+makeCacheMatrix(1:4, 2, 2)
+my_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+my_matrxx$get()
+my_matrix$get()
+makeCacheMatrix()
+my_matrix <- makeCacheMatrix(2)
+my_matrix
